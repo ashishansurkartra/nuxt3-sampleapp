@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+/* @tailwind utilities; */
+
+$app-bg-color: #f5f5f5;
+$primary-color: #61a3ff;
+.appcontainer {
+  background-color: $app-bg-color;
+  @apply flex flex-col items-center justify-center h-screen w-screen;
+  &__title {
+    color: $primary-color;
+    @apply text-4xl font-bold p-20;
+  }
+}
